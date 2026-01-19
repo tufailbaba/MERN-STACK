@@ -1,0 +1,21 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.parent {
+  width: 600px;
+  height: 600px;
+  background-color: gray;
+  display: grid;
+  grid-template-rows: 300px 300px;
+}
+.c1 {
+  background-color: red;
+  font-size: 40px;
+  color: aliceblue;
+}
+.c2 {
+  background-color: #00ffbb;
+  font-size: 40px;
+  color: aliceblue;
+}

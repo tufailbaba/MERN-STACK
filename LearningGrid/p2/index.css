@@ -1,0 +1,33 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.parent {
+  width: 500px;
+  height: 500px;
+  background-color: gray;
+  display: grid;
+  grid-template-rows: 150px 200px 150px;
+  grid-template-columns: 150px 200px 150px;
+}
+.c1 {
+  background-color: red;
+  font-size: 40px;
+  color: aliceblue;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.c2 {
+  background-color: #00ffbb;
+  font-size: 40px;
+  color: aliceblue;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.c3 {
+  background-color: #00c3ff;
+    font-size: 40px;
+  color: aliceblue;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
