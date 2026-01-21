@@ -1,7 +1,9 @@
-body {
-  padding: 0px;
-  margin: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .container {
   background-color: gray;
   width: 100%;
@@ -11,53 +13,51 @@ body {
   align-items: center;
   font-family: sans-serif;
 }
-.calbody {
-  height: 600px;
-  width: 450px;
-  background-color: #347cf0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .calbody {
   background-color: #3a4452;
   padding: 20px;
   border-radius: 10px;
 }
+
 .calbody form input {
   border: 0;
   outline: 0;
   width: 60px;
   height: 60px;
   border-radius: 10px;
-  box-shadow:-8px -8px 15px rgba(255, 255, 255, 0.1),5px  5px 15px rgba(0, 0 ,0, 0.2);
+  box-shadow: -8px -8px 15px rgba(255,255,255,0.1),
+               5px  5px 15px rgba(0,0,0,0.2);
   background: transparent;
   font-size: 20px;
   color: #fff;
   cursor: pointer;
   margin: 10px;
 }
-form .display{
-    display: flex;
-    justify-content: end;
-    margin: 20px 0;
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
 }
-form .display input{
-  
-    text-align: right;
-    flex: 1;
-    font-size: 45px;
-    box-shadow: none;
+
+.display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
 }
-form input.equal{
-    width: 145px;
-    color: #ff9500;
-   
+
+form input.equalto {
+  width: 145px;
+  color: #ff9500;
 }
-form input:hover{
-    box-shadow: inset 5px 5px 15px rgba(0, 0 ,0, 0.2),
-    inset -5px -5px 15px rgba(255, 255, 255, 0.1);
+
+form input.color {
+  color: #ff9500;
 }
-form input.color{
-   color: #ff9500;
+
+form input:hover {
+  box-shadow: inset 5px 5px 15px rgba(0,0,0,0.2),
+              inset -5px -5px 15px rgba(255,255,255,0.1);
 }
