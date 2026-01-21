@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="calbody">
-          <form>
-            <div class="display">
-            <input type="text" name="display">
-       
-        </div>
-   <div>
-    <input type="button" value="AC" class="color">
-    <input type="button" value="DE" class="color">
-    <input type="button" value="." class="color">
-    <input type="button" value="/" class="color">
-   </div>  
-   <div>
-    <input type="button" value="7">
-    <input type="button" value="8">
-    <input type="button" value="9">
-    <input type="button" value="*" class="color">
-   </div> <div>
-    <input type="button" value="4">
-    <input type="button" value="5">
-    <input type="button" value="6">
-    <input type="button" value="-" class="color">
-   </div> <div>
-    <input type="button" value="1">
-    <input type="button" value="2">
-    <input type="button" value="3">
-    <input type="button" value="+" class="color">
-   </div> <div>
-    <input type="button" value="00">
-    <input type="button" value="0">
-    <input type="button" value="=" class="equal" class="color">
-   </div> 
-   <form>
-    </div>
+
+<div class="container">
+  <div class="calbody">
+    <form onsubmit="return false;">
+      <div class="display">
+        <input type="text" id="display" readonly>
+      </div>
+
+      <div>
+        <input type="button" value="AC" class="color" onclick="clearDisplay()">
+        <input type="button" value="DE" class="color" onclick="deleteLast()">
+        <input type="button" value="." class="color" onclick="appendValue('.')">
+        <input type="button" value="/" class="color" onclick="appendValue('/')">
+      </div>
+
+      <div>
+        <input type="button" value="7" onclick="appendValue('7')">
+        <input type="button" value="8" onclick="appendValue('8')">
+        <input type="button" value="9" onclick="appendValue('9')">
+        <input type="button" value="*" class="color" onclick="appendValue('*')">
+      </div>
+
+      <div>
+        <input type="button" value="4" onclick="appendValue('4')">
+        <input type="button" value="5" onclick="appendValue('5')">
+        <input type="button" value="6" onclick="appendValue('6')">
+        <input type="button" value="-" class="color" onclick="appendValue('-')">
+      </div>
+
+      <div>
+        <input type="button" value="1" onclick="appendValue('1')">
+        <input type="button" value="2" onclick="appendValue('2')">
+        <input type="button" value="3" onclick="appendValue('3')">
+        <input type="button" value="+" class="color" onclick="appendValue('+')">
+      </div>
+
+      <div>
+        <input type="button" value="00" onclick="appendValue('00')">
+        <input type="button" value="0" onclick="appendValue('0')">
+        <input type="button" value="=" class="equalto" onclick="calculate()">
+      </div>
+    </form>
+  </div>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
