@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.parent {
+  width: 100%;
+  height: 100vh;
+  background-color: #3ec8ff;
+  display: grid;
+  grid-template-columns: repeat(13, 70px);
+  /* grid-template-rows: repeat(3 , 100px); */
+  justify-content: center;
+  align-items: end;
+}
+.c {
+  font-size: 45px;
+}
+.c1 {
+  background-color: #ff0000;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  animation-name: first;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.c2 {
+  background-color: #eeff00;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  animation-name: second;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.c3 {
+  background-color: #0dff00;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  animation-name: first;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.c4 {
+  background-color: #00ffd0;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  animation-name: second;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.c5 {
+  background-color: #0000ff;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 10;
+  grid-column-end: 11;
+  animation-name: first;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.c6 {
+  background-color: #ff00ea;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 12;
+  grid-column-end: 13;
+  animation-name: second;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes first {
+    from {
+     height: 100%;
+  }
+    to {
+        height: 150px;
+    }
+}
+@keyframes second {
+ 0% {
+    height: 150px;
+  }
+    to {
+        height: 100%;
+    }
+}
