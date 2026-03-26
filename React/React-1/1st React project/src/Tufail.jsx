@@ -1,8 +1,8 @@
 
-function Tufail() { 
+function Tufail({children}){ 
     return(
         <div>
-            <h1>My First React Tag-Tufail</h1>
+            <h1 className="tufail">{children}</h1>
             <p>This is a simple React application.</p>
          
         </div>
