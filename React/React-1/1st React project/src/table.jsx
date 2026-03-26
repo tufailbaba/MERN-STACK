@@ -1,35 +1,65 @@
-function Table({children}){
+function Table({first,second}){
     return (
         <div className="table">
             <h2> 
-                {children} x 1 = {children *1}
+                {first} x 1 = {first *1}
             </h2>
             <h2>
-                {children} x 2 = {children *2}
+                {first} x 2 = {first *2}
             </h2>   
             <h2>
-                {children} x 3 = {children *3}
+                {first} x 3 = {first *3}
             </h2>   
             <h2>
-                {children} x 4 = {children *4}
+                {first} x 4 = {first *4}
             </h2>   
             <h2>
-                {children} x 5 = {children *5}
+                {first} x 5 = {first *5}
             </h2>   
                 <h2> 
-                {children} x 6 = {children *6}
+                {first} x 6 = {first *6}
             </h2>
             <h2>
-                {children} x 7 = {children *7}      
+                {first} x 7 = {first *7}      
             </h2>
             <h2>
-                {children} x 8 = {children *8}
+                {first} x 8 = {first *8}
             </h2>
             <h2>
-                {children} x 9 = {children *9}
+                {first} x 9 = {first*9}
             </h2>
             <h2>
-                {children} x 10 = {children *10}
+                {first} x 10 = {first *10}
+            </h2>
+            <h2> 
+                {second} x 1 = {second *1}
+            </h2>
+            <h2>
+                {second} x 2 = {second *2}
+            </h2>   
+            <h2>
+                {second} x 3 = {second *3}
+            </h2>   
+            <h2>
+                {second} x 4 = {second *4}
+            </h2>   
+            <h2>
+                {second} x 5 = {second *5}
+            </h2>   
+                <h2> 
+                {second} x 6 = {second *6}
+            </h2>
+            <h2>
+                {second} x 7 = {second *7}      
+            </h2>
+            <h2>
+                {second} x 8 = {second *8}
+            </h2>
+            <h2>
+                {second} x 9 = {second*9}
+            </h2>
+            <h2>
+                {second} x 10 = {second *10}
             </h2>
         </div>
     );      

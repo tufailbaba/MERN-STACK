@@ -8,9 +8,7 @@ function App(){
       <Tufail>This is my 1st tag</Tufail> 
       <Tufail>This is my 2nd tag</Tufail> 
       <Baba></Baba>
-      <Table>1</Table>
-      <Table>2</Table>
-      <Table>3</Table>
+      <Table first={1} second={2} />
     </div>
   );
 }
