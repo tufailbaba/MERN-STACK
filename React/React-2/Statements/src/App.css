@@ -1,0 +1,43 @@
+.color_div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  margin: 20px;
+}
+
+.all_btns {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.indi_btn_red,
+.indi_btn_green,
+.indi_btn_blue,
+.indi_btn_yellow,
+.indi_btn_brown {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.indi_btn_red {
+  background-color: red;
+}
+
+.indi_btn_green {
+  background-color: green;
+}
+
+.indi_btn_blue {
+  background-color: blue;
+}
+
+.indi_btn_yellow {
+  background-color: yellow;
+}
+
+.indi_btn_brown {
+  background-color: brown;
+}

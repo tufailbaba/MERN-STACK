@@ -1,16 +1,17 @@
-import{ useState } from "react";
-function App() {
-  const [a, setA] = useState(55);
+import { useState } from 'react';
+import './App.css';
+function App (){
+  const [color, setColor] = useState("black");
   return (
     <div>
-      <>
-        {a>5?<div className="green"></div>:<div className="red"></div>}
-        <button onClick={()=>
-          {setA(3)}}>3</button>
-        <button onClick={()=>
-          {setA(10)}}>10</button>
-      </>
-
+      <div className='color_div' style={{ backgroundColor: color }}></div>
+      <div className='all_btns'>
+        <div className='indi_btn_red' onClick={() => setColor('red')}></div>
+        <div className='indi_btn_green' onClick={() => setColor('green')}></div>
+        <div className='indi_btn_blue' onClick={() => setColor('blue')}></div>
+        <div className='indi_btn_yellow' onClick={() => setColor('yellow')}></div>
+        <div className='indi_btn_brown' onClick={() => setColor('brown')}></div>
+      </div>
     </div>
   )
 }
