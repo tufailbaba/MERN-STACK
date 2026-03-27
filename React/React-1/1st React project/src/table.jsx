@@ -31,7 +31,7 @@ function Table({first,second}){
             <h2>
                 {first} x 10 = {first *10}
             </h2>
-            <h2> 
+            {/* <h2> 
                 {second} x 1 = {second *1}
             </h2>
             <h2>
@@ -60,7 +60,7 @@ function Table({first,second}){
             </h2>
             <h2>
                 {second} x 10 = {second *10}
-            </h2>
+            </h2> */}
         </div>
     );      
 }

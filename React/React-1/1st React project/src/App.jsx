@@ -1,6 +1,7 @@
 import Tufail  from "./Tufail"; 
 import Table from "./table";
 import Baba from "./Baba"
+import New from "./new"
 function App(){
   return(
     <div>
@@ -9,6 +10,7 @@ function App(){
       <Tufail>This is my 2nd tag</Tufail> 
       <Baba></Baba>
       <Table first={1} second={2} />
+      <New></New>
     </div>
   );
 }
