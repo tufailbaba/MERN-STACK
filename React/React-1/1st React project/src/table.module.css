@@ -1,0 +1,6 @@
+.table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    /* background-color: #07d3c2; */
+    background-image: linear-gradient(90deg, #07d3c2, #1298a2);
+}
